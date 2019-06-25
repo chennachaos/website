@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Chennakesava Kadapa </title>
+    <meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My personal webpage">
+    <meta name="keywords" content="CAD, FEM, CFD, FSI, IGA, Computer Aided Design, Finite Element Analysis, Computational Fluid Dynamics, Fluid Structure Interaction, Structural Analysis, Isogeometric Analysis, Dynamic Analysis, Check valve, Ball Valve, Flutter, Sedimentation, Vortex Induced Vibrations, Galloping, Lock-in, B-Splines, NURBS, Mixed Formulations, Least-Squares Formulation, Time Integration, Newmark-beta method, Generalised-alpha method, Staggered scheme, Wulf Dettmer, Djordje Peric, ZCCE">
+    <meta name="author" content="Chennakesava Kadapa">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesdropdownblue.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="scriptdropdownblue.js"></script>
+</head>
+
+<body class="body">
+
+	<header class="mainHeader">
+		<div id="top-main-content">
+  			<div class="col">
+    			<img src="img/profilepic.jpg" alt="" />
+  			</div>
+  			<div class="col">
+    			<p><font size="6">Chennakesava Kadapa</font>
+    			<a href="img/CV_CKadapa.pdf" target="_blank">
+    				<font size="5"> &emsp;&emsp;
+						<!--<div id="boxed_cv">						</div>-->
+  						<u>my CV</u>
+    				</font>
+    			</a>
+    			<br>
+    			Research Software Engineer @ <a href="http://www.swansea.ac.uk/iss/sa2c/" target="_blank" >SA2C</a>, Swansea University <br>
+  				<a href="https://www.researchgate.net/profile/Chennakesava_Kadapa" target="_blank"><img src="img/logos/ResearchGate_Logo2.jpg" alt="ResearchGate" style="width:100px;height:40px;">
+  				</a>
+				<a href="https://scholar.google.co.uk/citations?user=zNk33SUAAAAJ&hl=en"  target="_blank"><img src="img/logos/googlescholar.png" style="width:100px;height:40px;" alt="Google Scholar">
+				</a>
+				<a href="https://www.linkedin.com/in/chennakesava-kadapa-7a078610/"  target="_blank"><img src="img/logos/linkedin.png" alt="LinkedIn" style="width:100px;height:40px;">
+				</a>
+				<a href="https://ckadapa.wordpress.com/"  target="_blank"><img src="img/logos/wordpress.png" alt="my Blog" style="width:100px;height:40px;">
+				</a>
+				<a href="https://twitter.com/chenna1985"  target="_blank"><img src="img/logos/twitter.png" alt="Twitter" style="width:60px;height:40px;">
+				</a>
+				</p>
+			</div>
+		</div>
+
+		<div id='cssmenu'>
+		<ul>
+			<li><a href="home.html">Home</a>
+			</li>
+			<li><a href="about.html">About</a>
+			</li>
+			<li><a href="teaching.html">Teaching</a>
+			</li>
+			<li><a href="research-fsi.html">Research</a>
+				<ul>
+					<li><a href="research-fsi.html">Fluid-Structure Interaction</a> </li>
+					<li><a href="research-iga.html">Isogeometric Analysis</a> </li>
+					<li><a href="research-hpc.html">High-Performance Computing</a> </li>
+				</ul>
+			</li>
+			<li><a href="publications-journals.html">Publications</a>
+				<ul>
+					<li><a href="publications-journals.html">Journals</a> </li>
+					<li><a href="publications-conferences.html">Conferences</a> </li>
+					<li><a href="publications-invitedtalks.html">Invited Talks</a> </li>
+				</ul>
+			</li>
+			<li class="active"><a href="resources.html">Resources</a>
+			</li>
+			<li><a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		</div>
+	</header>
+
+    <!--
+    ------------------------------------
+    ------------------------------------
+    ------------------------------------
+    -->
+    <h2>Some very useful open-source libraries in C and C++</h2>
+    <div>
+    <ul>
+        <li>
+        <a href="http://www.boost.org/" target="_blank"><b>Boost:</b></a> One of the very powerful open-source libraries in C++. It consists of very efficient libraries for Arrays, Algorithms, Geometry, Graphs, Math functions, Timers etc.
+        </li>
+        <li>
+        <a href="http://eigen.tuxfamily.org/dox/" target="_blank"><b>Eigen:</b></a> A very efficient Matrix library built purely based on <i>Expression Templates</i>. It does not require compilation.
+        </li>
+        <li>
+        <a href="https://www.mcs.anl.gov/petsc/" target="_blank"><b>PETSc:</b></a> A parallel Matrix Algebra library with numerous parallel iterative solvers and support for many third-party solver libraries.
+        </li>
+        <li>
+        <a href="https://software.intel.com/en-us/mkl" target="_blank"><b>Intel MKL:</b></a> Matrix library from Intel. (You have to purchase it!)
+        </li>
+        <li>
+        <a href="http://www.cgal.org/" target="_blank"><b>CGAL:</b></a> A powerful library for Geometry processing algorithms. CGAL's algorithms are so much more robust and efficient than their counterparts in VTK. Between VTK and CGAL, always use CGAL.
+        </li>
+        <li>
+        <a href="http://www.vtk.org/" target="_blank"><b>VTK:</b></a> Along with ParaView, VTK is one of the best open-source libraries (in my opinion) for data visualisation for FEM/CFD applications. VTK has a large collection of algorithms for geometry processing when compared with CGAL, however, VTK algorithms are not as robust and efficient as those in CGAL.
+        </li>
+        <li>
+        <b> Sparse direct solvers </b> (also for FORTRAN)
+          <ul>
+            <li> <a href="http://www.pardiso-project.org/" target="_blank"><b>PARDISO</b></a> - parallelisation with OpenMP </li>
+            <li> <a href="http://crd-legacy.lbl.gov/~xiaoye/SuperLU/" target="_blank"><b>SUPERLU</b></a> - parallelisation with OpenMP (SuperLU_MT) as well as OpenMPI (SuperLU_DIST) </li>
+            <li> <a href="http://mumps.enseeiht.fr/" target="_blank"><b>MUMPS</b></a> - parallelisation with OpenMPI </li>
+            <li> <a href="http://faculty.cse.tamu.edu/davis/suitesparse.html" target="_blank"><b>UMFPACK</b></a> - Used in MATLAB </li>
+            There are many others, for example, SPOOLES, TAUCS etc. But, they are not as good the ones listed above.
+          </ul>
+        </li>
+    </ul>
+    </div>
+
+    <!--
+    ------------------------------------
+    ------------------------------------
+    ------------------------------------
+    -->
+    <h2>Computer Graphics and Computer Aided Design</h2>
+    <div>
+    <ul>
+        <li><a href="http://www.cgal.org/" target="_blank"><b>CGAL:</b></a> A powerful library for Geometry processing algorithms.</li>
+        <li><a href="https://www.freecadweb.org/" target="_blank"><b>FreeCAD:</b></a> Opensource 3D parametric modeller. It also includes simple mesh generator along with a basic FE solver.</li>
+    </ul>
+    </div>
+
+    <!--
+    ------------------------------------
+    ------------------------------------
+    ------------------------------------
+    -->
+    <h2>FEM/CFD</h2>
+    <div>
+    <ul>
+        <li><a href="http://gmsh.info/" target="_blank"><b>Gmsh:</b></a> Gmsh is a free 3D finite element mesh generator with a built-in CAD engine and post-processor.</li>
+        <li><a href="http://www.altairhyperworks.com/product/hypermesh" target="_blank"><b>HyperMesh:</b></a> Commercial software suit for pre-processing for FEA/CFD applications. The best mesh generation software available for large, complex CAD geometries. Supports mesh export for various commercial FEA/CFD software packages, for example, ANSYS, Abaqus, Nastran, etc. <br>
+<b>Note:</b> HyperMesh has a steep initial learning curve but it is worth the effort. Once you know HyperMesh, meshing is never going to be an ordeal in your life. HyperMesh is so much more user-friendly than Gmsh.</li>
+    </ul>
+    </div>
+
+    <!--
+    ------------------------------------
+    ------------------------------------
+    ------------------------------------
+    -->
+    <h2>Visualisation</h2>
+    <div>
+    <ul>
+        <li><a href="https://www.paraview.org/" target="_blank"><b>ParaView:</b></a> Built on top of VTK library, Paraview is a free software tool which supports a lot of input formats and consists of several functions for post-processing FEA/CFD results, including the support for creating animations. Paraview also has support for parallel data visualisation. Models with billions of cells have been post-processed using parallel Paraview server.</li>
+        <li><a href="https://matplotlib.org/" target="_blank"><b>Matplotlib:</b></a> Python based tool for visualisation of data. Especially good for plotting graphs and contours. My preferred choice over GNUplot. Supports maths symbols using LaTex format.</li>
+    </ul>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

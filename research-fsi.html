@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Chennakesava Kadapa </title>
+    <meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My personal webpage">
+    <meta name="keywords" content="CAD, FEM, CFD, FSI, IGA, Computer Aided Design, Finite Element Analysis, Computational Fluid Dynamics, Fluid Structure Interaction, Structural Analysis, Isogeometric Analysis, Dynamic Analysis, Check valve, Ball Valve, Flutter, Sedimentation, Vortex Induced Vibrations, Galloping, Lock-in, B-Splines, NURBS, Mixed Formulations, Least-Squares Formulation, Time Integration, Newmark-beta method, Generalised-alpha method, Staggered scheme, Wulf Dettmer, Djordje Peric, ZCCE">
+    <meta name="author" content="Chennakesava Kadapa">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesdropdownblue.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="scriptdropdownblue.js"></script>
+</head>
+
+<body class="body">
+
+	<header class="mainHeader">
+		<div id="top-main-content">
+  			<div class="col">
+    			<img src="img/profilepic.jpg" alt="" />
+  			</div>
+  			<div class="col">
+    			<p><font size="6">Chennakesava Kadapa</font>
+    			<a href="img/CV_CKadapa.pdf" target="_blank">
+    				<font size="5"> &emsp;&emsp;
+						<!--<div id="boxed_cv">						</div>-->
+  						<u>my CV</u>
+    				</font>
+    			</a>
+    			<br>
+    			Research Software Engineer @ <a href="http://www.swansea.ac.uk/iss/sa2c/" target="_blank" >SA2C</a>, Swansea University <br>
+  				<a href="https://www.researchgate.net/profile/Chennakesava_Kadapa" target="_blank"><img src="img/logos/ResearchGate_Logo2.jpg" alt="ResearchGate" style="width:100px;height:40px;">
+  				</a>
+				<a href="https://scholar.google.co.uk/citations?user=zNk33SUAAAAJ&hl=en"  target="_blank"><img src="img/logos/googlescholar.png" style="width:100px;height:40px;" alt="Google Scholar">
+				</a>
+				<a href="https://www.linkedin.com/in/chennakesava-kadapa-7a078610/"  target="_blank"><img src="img/logos/linkedin.png" alt="LinkedIn" style="width:100px;height:40px;">
+				</a>
+				<a href="https://ckadapa.wordpress.com/"  target="_blank"><img src="img/logos/wordpress.png" alt="my Blog" style="width:100px;height:40px;">
+				</a>
+				<a href="https://twitter.com/chenna1985"  target="_blank"><img src="img/logos/twitter.png" alt="Twitter" style="width:60px;height:40px;">
+				</a>
+				</p>
+			</div>
+		</div>
+
+		<div id='cssmenu'>
+		<ul>
+			<li><a href="home.html">Home</a>
+			</li>
+			<li><a href="about.html">About</a>
+			</li>
+			<li><a href="teaching.html">Teaching</a>
+			</li>
+			<li class="active"><a href="research-fsi.html">Research</a>
+				<ul>
+					<li><a href="research-fsi.html">Fluid-Structure Interaction</a> </li>
+					<li><a href="research-iga.html">Isogeometric Analysis</a> </li>
+					<li><a href="research-hpc.html">High-Performance Computing</a> </li>
+				</ul>
+			</li>
+			<li><a href="publications-journals.html">Publications</a>
+				<ul>
+					<li><a href="publications-journals.html">Journals</a> </li>
+					<li><a href="publications-conferences.html">Conferences</a> </li>
+					<li><a href="publications-invitedtalks.html">Invited Talks</a> </li>
+				</ul>
+			</li>
+			<li><a href="resources.html">Resources</a>
+			</li>
+			<li><a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		</div>
+	</header>
+
+	<h2>Fluid-Structure Interaction (FSI)</h2>
+	<p>I have proposed a novel numerical framework for the simulation of Fluid-Structure Interaction phenomenon in complex industrial problems. I have developed and implemented two different formulations:
+	<ol>
+	<li> <b>Fictitious Domain Method</b> [<a href="http://www.sciencedirect.com/science/article/pii/S0045782515004296" target="_blank">Paper</a>] <br>
+          This formulation is based on the well-known Fictitious Domain Method over hierarchical b-spline grids. The nature of the formulation renders it is highly suitable for simulation(s) of interaction of thin flexible structures with the fluid flow, for example, filaments, heartvalves, flags, parachutes, stadium roofs etc. Simulations #1 and #2 are performed using this formulation.
+	</li>
+	<li> <b>based on CutFEM approach</b> [<a href="http://www.sciencedirect.com/science/article/pii/S0045782516304893" target="_blank">Paper1</a>, <a href="http://www.sciencedirect.com/science/article/pii/S0045782516313706" target="_blank">Paper2</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0045782518301026" target="_blank">Paper3</a>]
+	  This formulation is based on cut-cell approach over hierarchical b-spline grids. Due to the nature of the formulation, it is highly suitable for the simulation(s) of interaction of bulky solids with the fluid flow. This formulation has been implemented into a very robust and efficient software tool using CGAL library for point-location algorithm in 3D and VTK for post-processing, including parallelisation for HPC platforms using MPI and PETSc library. I have successfully performed coupled FSI simulations of sizes up to 5 million DOFs.<br>
+          Simulations starting from #3 are performed using this approach.
+	</li>
+	</ol>
+	</p>
+       	<div align="center">
+		<p>
+		<h4>Simulation #1: Vortex induced vibrations of a flexible beam</h4>
+		<video width="60%" controls src="img/fsi/beamWall-L3-monolithic-pres.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #2: Flexible leaf subjected to pulsating flow</h4>
+		<video width="60%" controls src="img/fsi/leaf-velmagn.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+	<div style="clear:both;"></div>
+       	<div align="center">
+		<p>
+  		<h4>Simulation #3: Trasnverse galloping of a square body</h4>
+		<video width="60%" controls src="img/fsi/galloping-transverse-pres2.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+  		<h4>Simulation #4: Rotational galloping of a rectangular body</h4>
+		<video width="60%" controls src="img/fsi/galloping-rotational-L4-Q2-dt0p2-vortz2.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #5: Particle sedimentation</h4>
+		<video width="60%" controls src="img/fsi/particles25-position-new2.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #6: Model hydraulic turbine</h4>
+		<video width="60%" controls src="img/fsi/turbine-velmagn.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #7: Model Savonius turbine</h4>
+		<video width="60%" controls src="img/fsi/savonius-turbine-vortz.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #8: Opening and closing of a ball valve - axisymmetric model</h4>
+		<video width="60%" controls src="img/fsi/Ballvalve-openingclosing.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #9: Flow into a rotor bearing rotating at 3500 RPM</h4>
+		<video width="60%" controls src="img/fsi/rotorBearing-RPM3500-nu5-dt0p05-Q2-velmagn.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #10: Flow-induced oscillations of a flexible plate in 2D</h4>
+		<video width="60%" controls src="img/fsi/Turekbeam-FSI2-2D.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #11: Flow-induced oscillations of a flexible plate in 3D</h4>
+		<video width="60%" controls src="img/fsi/Turekbeam-FSI2-3D.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #12: Flutter of a bridge deck in 3D</h4>
+		<video width="60%" controls src="img/fsi/bridgeflutter-L2-Q1-streamlines.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+       	<div align="center">
+		<p>
+		<h4>Simulation #13: Flutter of a model wing in 3D</h4>
+		<video width="60%" controls src="img/fsi/wing3d-velmagn.ogv" type="video/ogv"></video>
+		</p>
+       	</div>
+</body>
+</html>
+
