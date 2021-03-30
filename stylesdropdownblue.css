@@ -734,3 +734,17 @@ p{
   border: solid red 1px
   display: inline-block
 }
+
+.videosgrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.videogrid {
+  float: left;
+  width: 100%;
+  margin-left: 5%;
+  margin-bottom: 40px;
+}

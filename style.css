@@ -241,3 +241,17 @@ margin:5px;
   font-size: 22px;
   margin:5px 0;
 }
+
+.videosgrid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.videogrid {
+    float: left;
+    width: 30.8641975309%;
+    margin-left: 3.7037037037%;
+    margin-bottom: 40px;
+}
